@@ -24,7 +24,8 @@
             "tsConfig": "projects/proplus/tsconfig.app.json",
             "assets": [
               "projects/proplus/src/favicon.ico",
-              "projects/proplus/src/assets"
+              "projects/proplus/src/assets",
+              "projects/proplus/src/manifest.webmanifest"
             ],
             "styles": [
               "projects/proplus/src/styles.scss"
@@ -35,7 +36,9 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "serviceWorker": true,
+            "ngswConfigPath": "projects/proplus/ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -94,7 +97,8 @@
             "karmaConfig": "projects/proplus/karma.conf.js",
             "assets": [
               "projects/proplus/src/favicon.ico",
-              "projects/proplus/src/assets"
+              "projects/proplus/src/assets",
+              "projects/proplus/src/manifest.webmanifest"
             ],
             "styles": [
               "projects/proplus/src/styles.scss"
