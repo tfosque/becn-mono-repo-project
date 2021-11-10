@@ -22,7 +22,6 @@
             "main": "projects/proplus/src/main.ts",
             "polyfills": "projects/proplus/src/polyfills.ts",
             "tsConfig": "projects/proplus/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/proplus/src/favicon.ico",
               "projects/proplus/src/assets"
@@ -30,7 +29,13 @@
             "styles": [
               "projects/proplus/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -60,7 +65,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -182,7 +188,6 @@
             "main": "projects/mobile/src/main.ts",
             "polyfills": "projects/mobile/src/polyfills.ts",
             "tsConfig": "projects/mobile/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/mobile/src/favicon.ico",
               "projects/mobile/src/assets"
@@ -190,7 +195,13 @@
             "styles": [
               "projects/mobile/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -220,7 +231,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
